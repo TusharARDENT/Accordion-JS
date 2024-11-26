@@ -131,22 +131,26 @@
 	 }
 
 	 .accordion-list{
-		border: solid 3px rgb(111, 214, 255);
 		border-radius: 5px;
 		display: flex;
 		flex-direction: column;
+		gap: 1px;
 	 }
 
 	 .acc-listHeading{
-		padding: 10px 1%;
-		border-bottom: solid 3px rgb(111, 214, 255);
+		padding: 10px 5%;
+		border: solid 3px #BBBFCA;
 		cursor: pointer;
 		display: flex;
 		justify-content: space-between;
+		cursor: pointer;;
+		background-color: #BBBFCA;
+		color: #726f6f;
 	 }
 
-	 .acc-listItem4 .acc-listHeading{
-		border-bottom: none;
+	 .acc-listHeading:hover{
+		background-color: #495464;
+		color: #BBBFCA;
 	 }
 
 	 .acc-listTitle{
@@ -157,6 +161,10 @@
 		 padding: 20px 4%;
 		 text-align: justify;
 		 line-height: 1.5em;
+		 border: solid 3px #F4F4F2;
+		 margin-top: 2px;
+		 background-color: #F4F4F2;
+		 color: #495464;
 		 /* display: none; */
 	 }
 
@@ -165,6 +173,7 @@
 		font-family: "FontAwesome";
 		font-size: 1.5rem;
 		font-weight: 400;
+		transform: rotate(180deg);
 	 }
 
 	 .acc-dropdown span{
