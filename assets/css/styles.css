@@ -113,7 +113,7 @@
 	 /* for wrapper */
 	 .wrapper {
 		 max-width: 1360px;
-		 width: 60.1%;
+		 width: 80.1%;
 		 margin: 0 auto;
 	 }
 	 
@@ -123,3 +123,51 @@
 		 padding: 0;
 		 margin: 0;
 	 }
+
+	 .accordion{
+		max-width: 100%;
+		width: 100%;
+		padding: 50px 0;
+	 }
+
+	 .accordion-list{
+		border: solid 3px rgb(111, 214, 255);
+		border-radius: 5px;
+		display: flex;
+		flex-direction: column;
+	 }
+
+	 .acc-listHeading{
+		padding: 10px 1%;
+		border-bottom: solid 3px rgb(111, 214, 255);
+		cursor: pointer;
+		display: flex;
+		justify-content: space-between;
+	 }
+
+	 .acc-listItem4 .acc-listHeading{
+		border-bottom: none;
+	 }
+
+	 .acc-listTitle{
+		font-size: 1.5em;
+	 }
+
+	 .acc-listDesc{
+		 padding: 20px 4%;
+		 text-align: justify;
+		 line-height: 1.5em;
+		 /* display: none; */
+	 }
+
+	 .acc-dropdown::before{
+		content: "\f0d7";
+		font-family: "FontAwesome";
+		font-size: 1.5rem;
+		font-weight: 400;
+	 }
+
+	 .acc-dropdown span{
+		display: none;
+	 }
+
