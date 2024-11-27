@@ -11,3 +11,4 @@ accButton2.forEach((button) => {
         dropDown.classList.toggle("acc-dropdownup")
     })
 });
+
