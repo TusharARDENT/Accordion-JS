@@ -139,24 +139,27 @@
 
 	 .acc-listHeading{
 		padding: 10px 5%;
-		border: solid 3px #BBBFCA;
+		border: solid 1px #BBBFCA;
+		border-radius: 5px;
 		cursor: pointer;
 		display: flex;
 		justify-content: space-between;
 		cursor: pointer;;
-		background-color: #BBBFCA;
-		color: #726f6f;
+		background-color: #d3d3c9;
+		color: #929090;
 	 }
 
 	 .acc-listHeading:hover{
-		background-color: #495464;
-		color: #BBBFCA;
-	 }
+		background-color: #f0f0d2;
+		opacity: 50%;
+		color: #6d6767;
+		border: solid 1px;
+	}
 
 	 .acc-listTitle{
 		font-size: 1.5em;
 		font-family:'Times New Roman', Times, serif;
-		color: #B4B4B8;
+		/* color: #B4B4B8; */
 	 }
 
 	 .acc-listDesc{
@@ -175,7 +178,6 @@
 	 .acc-dropdown::before{
 		content: "\f0d7";
 		font-family: "FontAwesome";
-		color: #dfe0d6;
 		font-size: 1.5rem;
 		font-weight: 400;
 		transform: rotate(180deg);
