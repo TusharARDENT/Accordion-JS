@@ -131,27 +131,26 @@
 	 }
 
 	 .accordion-list{
-		/* border: solid 1px rgb(111, 214, 255); */
 		border-radius: 5px;
 		display: flex;
 		flex-direction: column;
-		gap: 2px;
+		gap: 1px;
 	 }
 
 	 .acc-listHeading{
 		padding: 10px 5%;
-		border: solid 1px #dfdedc;
-		font-size: 1.2em;
-		border-radius: 5px;
-		background-color: #fdfaf1;
+		border: solid 3px #BBBFCA;
 		cursor: pointer;
 		display: flex;
 		justify-content: space-between;
+		cursor: pointer;;
+		background-color: #BBBFCA;
+		color: #726f6f;
 	 }
 
 	 .acc-listHeading:hover{
-		background-color: #c8cac0;
-
+		background-color: #495464;
+		color: #BBBFCA;
 	 }
 
 	 .acc-listTitle{
@@ -166,11 +165,10 @@
 		 font-size: 1.1em;
 		 font-family:'Times New Roman', Times, serif;
 		 line-height: 1.5em;
+		 border: solid 3px #F4F4F2;
 		 margin-top: 2px;
-		 border: solid 2px #dfdedc;
-		 border-radius: 5px;
-		 background-color: #eeeee7;
-		 color: #a3a4a5;
+		 background-color: #F4F4F2;
+		 color: #495464;
 		 /* display: none; */
 	 }
 
@@ -180,6 +178,7 @@
 		color: #dfe0d6;
 		font-size: 1.5rem;
 		font-weight: 400;
+		transform: rotate(180deg);
 	 }
 
 	 .acc-dropdown span{
