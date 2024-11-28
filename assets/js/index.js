@@ -5,9 +5,9 @@ const dropDown = document.querySelectorAll(".acc-dropdown")
 
 
 accButton2.forEach((button) => {
-    // const content = accButton2.nextElementSibling;
     button.addEventListener("click", function(){
-        button.lastElementChild.classList.toggle("show");
-        dropDown.classList.toggle("acc-dropdownup")
+        button.querySelector(".acc-listDesc").classList.toggle("show");
+        button.querySelector(".acc-dropdown").classList.toggle("acc-dropdownup")
     })
 });
+
