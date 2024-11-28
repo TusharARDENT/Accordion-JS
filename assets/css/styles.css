@@ -130,6 +130,11 @@
 		padding: 50px 0;
 	 }
 
+	 .accordion .wrapper{
+		width: 50%;
+	 }
+
+
 	 .accordion-list{
 		border-radius: 5px;
 		display: flex;
@@ -148,6 +153,9 @@
 		cursor: pointer;;
 		background-color: #faf4f47c;
 		color: #929090;
+		transition: 0.3s ease-in-out;
+		position: relative;
+		z-index: 1;
 	 }
 
 	 .acc-listHeading:hover{
@@ -159,6 +167,7 @@
 
 	 .acc-listTitle{
 		font-size: 1.5em;
+		font-weight: 600;
 		font-family:'Times New Roman', Times, serif;
 		/* color: #B4B4B8; */
 	 }
@@ -166,51 +175,40 @@
 	 .acc-listDesc{
 	     height: 0;
 		 padding: 0 5%;
-		 position: absolute;
-		 visibility: hidden;
-	 }
-
-	 .show{
-		visibility: visible; 
-		max-height: auto;
-		height: auto;
-		padding: 10px 5%;
-		border: solid 1px;
-		position: relative;
-		text-align: justify;
+		 margin-top: 2px;
+		 border: solid 0 #F4F4F2;
+		 text-align: justify;
 		 font-size: 1.1em;
 		 font-family:'Times New Roman', Times, serif;
 		 line-height: 1.5em;
-		 border: solid 0 #F4F4F2;
-		 margin-top: 2px;
+		 visibility: hidden;
+		 transition: all 0.3s;
+	 }
+
+	 .show{
+		height: fit-content;
+		padding: 10px 5%;
+		position: relative;
+		visibility: visible;
 		 background-color: #f5f5f4;
 		 color: #495464;
-		 transition: all 2s;
-	 }                                                                         
+		 transition: all 0.3s ease-in-out;
+	 }  
 
 	 .acc-dropdown::before{
-		content: "+";
+		content: "\f0d7";
 		font-family: "FontAwesome";
 		font-size: 1.5rem;
 		font-weight: 400;
 	 }
 
 	 .acc-dropdownup::before{
-		content: "-";
+		content: "\f0d8";
 		font-family: "FontAwesome";
 		font-size: 1.5rem;
 		font-weight: 400;
-	 }
-
-	 .acc-dropdownup::before{
-		content: "-";
-		font-family: "FontAwesome";
-		font-size: 1.5rem;
-		font-weight: 400;
-		transform: rotate(180deg);
 	 }
 
 	 .acc-dropdown span{
 		display: none;
 	 }
- 
